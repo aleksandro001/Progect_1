@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+ <g class="layer">
+  <title>Layer 1</title>
+  <text fill="#ff0000" font-family="Sans-serif" font-size="24" id="svg_3" stroke="#e22424" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" transform="matrix(0.537494, 0, 0, 0.632088, -1.17173, 4.19352)" x="8.48703" xml:space="preserve" y="14.30284">Е</text>
+  <text fill="#aad4ff" font-family="Sans-serif" font-size="24" id="svg_4" stroke="#e22424" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" transform="matrix(0.417171, 0, 0, 0.630376, 3.95193, 4.65282)" x="17.82979" xml:space="preserve" y="13.57281">Ж</text>
+  <circle cx="-10.66" cy="8.9" fill="#000000" fill-opacity="0" id="svg_6" r="8.07083" stroke="#e22424" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+  <text fill="#ff0000" fill-opacity="0" font-family="Sans-serif" font-size="24" id="svg_9" stroke="#e22424" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" x="1.74" xml:space="preserve" y="4.7"/>
+  <path d="m-8.158338,19.134999" fill="#aad4ff" id="svg_5" opacity="0.5" stroke="#e22424" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+ </g>
+</svg>

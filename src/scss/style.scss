@@ -1,0 +1,19 @@
+@import "fonts";
+@import "normalize";
+@import "null";
+@import "MyNull";
+@import "header";
+
+@mixin max-width {
+  max-width: 1920px;
+}
+body {
+  background-color: #121212;
+  font-family: Montserrat;
+  font-weight: 400;
+  padding: 10px;
+}
+.wrapper {
+  @include max-width();
+  margin: 0 auto;
+}
