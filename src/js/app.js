@@ -4,6 +4,6 @@
 
 flsFunctions.isWebp();
 
-isMobile();
+// isMobile();
 
 iconMenu();
