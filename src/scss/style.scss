@@ -3,6 +3,7 @@
 @import "null";
 @import "MyNull";
 @import "header";
+@import "block__prevu";
 
 @mixin max-width {
   max-width: 1920px;
@@ -16,4 +17,42 @@ body {
 .wrapper {
   @include max-width();
   margin: 0 auto;
+  position: relative;
 }
+
+.corner__left {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  top: 40px;
+  left: 90px;
+}
+.corner__right {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  right: 90px;
+  bottom: 0;
+}
+
+@media (max-width: 1980px){
+  .corner__left{
+    left: calc(0px + (90 - 0) * (100vw - 1600px) / (1980 - 1600));
+  }
+  .corner__right{
+    right: calc(0px + (90 - 0) * (100vw - 1600px) / (1980 - 1600));
+  }
+}
+@media (max-width: 1600px){
+  .corner__left{
+    display: none;
+  }
+  .corner__right{
+    display: none;
+  }
+}
+// width: calc(0px + (90 - 0) * (100vw - 1600px) / (1980 - 1600));

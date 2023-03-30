@@ -1,0 +1,198 @@
+.maint__wrapper {
+  padding-bottom: 200px;
+  padding-top: 50px;
+  background: url("/img/unsplash.png") 50% / cover no-repeat;
+  transition: 0.3s;
+}
+
+.bloc {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #fff;
+  height: 688px;
+  max-width: 1600px;
+  margin: 0 auto;
+  gap: 10px;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.label__title {
+  font-weight: 600;
+  font-size: 106px;
+  line-height: 100%;
+  padding-top: 1em;
+}
+.lable__order {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.lable__botton {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  background: rgba(18, 18, 18, 0.01);
+  border: 2px solid #ffffff;
+  border-radius: 67px;
+  width: 460px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.lable__botton:hover {
+  background: #ffffff;
+  box-shadow: -4px -4px 10px rgba(255, 0, 0, 0.51),
+    4px 4px 10px rgba(0, 255, 255, 0.45);
+  color: #121212;
+}
+.lable__wrapp-gift {
+  width: 86px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+  position: relative;
+}
+.svg-icon {
+  padding: 0 10px;
+}
+.lable__wrapp-gift:hover {
+  width: 428px;
+  background: #ffffff;
+  box-shadow: -4px -4px 10px rgba(255, 0, 0, 0.51),
+    4px 4px 10px rgba(0, 255, 255, 0.45);
+  cursor: pointer;
+  border-radius: 71px;
+}
+.lable__wrapp-gift:hover .svg__black,
+.lable__wrapp-gift:hover circle {
+  stroke: #000;
+}
+.lable__gift {
+}
+.lable__gift-text {
+  position: absolute;
+  font-family: "Montserrat";
+  font-style: normal;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  display: flex;
+  letter-spacing: 0.04em;
+  color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+.lable__wrapp-gift:hover .lable__gift-text {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(100px, 0px);
+}
+.svg__black {
+}
+.svg__white {
+  stroke: white;
+}
+.brends {
+  display: flex;
+  flex-direction: column;
+}
+.brends__item-title {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  width: 20px;
+}
+.brends__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  gap: 20px;
+}
+.brends__item li {
+  padding-top: 20px;
+  width: 253px;
+  max-width: 253px;
+  min-width: 144px;
+}
+
+@media (min-width: 428px) {
+}
+
+@media (max-width: 1110px) {
+  .lable__order {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 1600px) {
+  .bloc{
+    height: calc(500px + (688 - 500) * (100vw - 428px) / (1600 - 428));;
+  }
+  .maint__wrapper{
+    padding-bottom: calc(50px + (200 - 50) * (100vw - 428px) / (1600 - 428));;
+  }
+  .lable__botton {
+    width: calc(373px + (460 - 373) * (100vw - 428px) / (1600 - 428));
+    height: calc(56px + (84 - 56) * (100vw - 428px) / (1600 - 428));
+    font-size: calc(24px + (28 - 24) * (100vw - 428px) / (1600 - 428));
+  }
+  .lable__gift-text {
+    font-size: calc(23px + (28 - 23) * (100vw - 428px) / (1600 - 428));
+  }
+  .lable__wrapp-gift {
+    height: calc(94px + (104 - 94) * (100vw - 428px) / (1600 - 428));
+  }
+  .lable__wrapp-gift:hover {
+    width: calc(373px + (460 - 373) * (100vw - 428px) / (1600 - 428));
+  }
+  .label__title {
+    font-size: calc(36px + (106 - 36) * (100vw - 428px) / (1600 - 428));
+  }
+  .brends__item li {
+    width: calc(144px + (253 - 144) * (100vw - 428px) / (1600 - 428));
+  }
+  .brends__item-title {
+    font-size: calc(18px + (28 - 18) * (100vw - 428px) / (1600 - 428));
+  }
+  .lable__order img {
+    width: calc(68px + (84 - 68) * (100vw - 428px) / (1600 - 428));
+  }
+}
+@media (max-width: 767.98px) {
+  .brends__item-title {
+    width: auto;
+  }
+  .bloc {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .brends__item {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .brends__item-title {
+    text-align: center;
+  }
+}
+@media (max-width: 991.98px) {
+  .maint__wrapper{
+    padding-top: 0px;
+  }
+}
